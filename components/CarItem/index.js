@@ -2,6 +2,7 @@ import React from 'react'
 import { View, Text, ImageBackground } from 'react-native';
 import styles from './styles';
 import StyledButton from '../StyledButton';
+import IconArrow from '../IconArrow';
 
 const CarItem = (props) => {
 
@@ -24,16 +25,21 @@ const CarItem = (props) => {
                 <StyledButton
                     content={"Custom Order"}
                     onPress={() => {
-                        console.warn('Custom Order Press')
+                        alert('Please wait while we confirm you are not an robot')
                     }}
                     type='primary' />
                 <StyledButton
                     content={"Existing Inventory"}
                     onPress={() => {
-                        console.warn('Existing Inventory Press')
+                        alert('There are 0 units in inventory')
                     }}
                     type='secondary' />
             </View>
+            {name === 'Model S' ?
+                <View style={styles.iconContainer}>
+                    <IconArrow />
+                </View> : undefined
+            }
         </View>
 
 

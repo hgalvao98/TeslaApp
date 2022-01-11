@@ -1,14 +1,27 @@
 import { StyleSheet } from "react-native";
+import { Dimensions } from "react-native";
+
+let ScreenHeight = Dimensions.get("window").height;
 
 const styles = StyleSheet.create({
     container: {
-        position: 'absolute',
-        top: 50,
-        zIndex: 1000,
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        width: '100%',
-        paddingHorizontal: 20
+        flex: 1,
+        backgroundColor: '#fff',
+        alignItems: 'flex-start',
+        justifyContent: 'center',
+    },
+    title: {
+        marginTop: 20,
+        fontSize: 30,
+        marginBottom: 30
+    },
+    subtitle: {
+        fontSize: 20,
+        fontWeight: '600'
+    },
+    text: {
+        marginTop: 30,
+        marginBottom: 30
     },
     logo: {
         width: 100,

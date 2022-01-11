@@ -29,8 +29,14 @@ const styles = StyleSheet.create({
     },
     buttonContainer: {
         position: 'absolute',
-        bottom: 50,
+        bottom: 70,
         width: '100%'
+    },
+    iconContainer: {
+        position: 'absolute',
+        bottom: 10,
+        width: '100%',
+
     }
 })
 
